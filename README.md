@@ -1,20 +1,115 @@
-<<<<<<< HEAD
-# React + Vite
+# 🛍️ Products Dashboard (React.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Products Dashboard** built with React.js and Tailwind CSS using the Fake Store API.  
+The project demonstrates core frontend skills such as API integration, state management, filtering, pagination, and UI/UX handling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+### 📦 Products Display
+- Fetch products from Fake Store API
+- Display products in responsive cards
+- Show:
+  - Product Image
+  - Title
+  - Category
+  - Price
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### 🔍 Search Functionality
+- Search products by name
+- Real-time filtering
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Products-Dashboard
->>>>>>> 9b5e68dd31d9ffe3b0c03b84d901c67ba245ad5f
+---
+
+### 🏷️ Category Filter
+- Filter products by category
+- Dynamic categories from API data
+
+---
+
+### 📄 Pagination
+- Client-side pagination
+- 8 products per page
+- Page navigation buttons
+
+---
+
+### 🌙 Dark Mode
+- Toggle between Light & Dark mode
+- Fully responsive theme support
+
+---
+
+### ⏳ Loading State
+- Skeleton loading UI for better UX
+
+---
+
+### ❌ Error Handling
+- Displays error message if API fails
+
+---
+
+### 📱 Responsive Design
+- Mobile, tablet, and desktop friendly layout
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js (Hooks: useState, useEffect)
+- Tailwind CSS
+- Fake Store API
+- JavaScript (ES6+)
+
+---
+
+## 📡 API Used
+
+https://fakestoreapi.com/products
+
+
+---
+
+📁 Project Structure
+```
+src/
+│
+├── components/
+│   ├── ui/
+│   │   ├── Input.jsx
+│   │   ├── Select.jsx
+│   │
+│   ├── ProductCard.jsx
+│   ├── ProductSkeleton.jsx
+│   ├── SearchBar.jsx
+│   ├── CategoryFilter.jsx
+│   
+│
+├── pages/
+│   └── Dashboard.jsx
+│
+├── services/
+│   └── api.js
+│
+├── App.jsx
+└── main.jsx
+
+```
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/products-dashboard.git
+
+cd products-dashboard
+
+npm install
+
+npm run dev
