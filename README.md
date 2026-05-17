@@ -106,7 +106,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/products-dashboard.git
+git clone https://github.com/20180360/Products-Dashboard.git
 
 cd products-dashboard
 
